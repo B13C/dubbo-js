@@ -1,0 +1,23 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "hello-service:zk": "ts-node ./hello-service/server-zk.ts",
+    "hello-api:zk": "ts-node ./hello-api/server-zk.ts",
+    "hello-service:nacos": "ts-node ./hello-service/server-nacos.ts",
+    "hello-api:nacos": "ts-node ./hello-api/server-nacos.ts"
+  },
+  "dependencies": {
+    "apache-dubbo-consumer": "^4.0.0",
+    "apache-dubbo-registry": "0.0.2",
+    "apache-dubbo-service": "0.0.1",
+    "koa": "^2.13.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.4.2"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4"
+  }
+}
